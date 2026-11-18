@@ -5,7 +5,7 @@ omit =
     */unit_tests/*
     */conftest.py
     */defect_detector_wrapper.py
-    */defect_ai_mock.py
+    */ui_components.py
 
 [report]
 omit =
@@ -13,4 +13,4 @@ omit =
     */unit_tests/*
     */conftest.py
     */defect_detector_wrapper.py
-    */defect_ai_mock.py
+    */ui_components.py
