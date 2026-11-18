@@ -1,0 +1,16 @@
+[run]
+source = .
+omit =
+    unit_tests/*
+    */unit_tests/*
+    */conftest.py
+    */defect_detector_wrapper.py
+    */defect_ai_mock.py
+
+[report]
+omit =
+    unit_tests/*
+    */unit_tests/*
+    */conftest.py
+    */defect_detector_wrapper.py
+    */defect_ai_mock.py
