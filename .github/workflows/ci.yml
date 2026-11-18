@@ -35,6 +35,19 @@ jobs:
           coverage run --source=. -m unittest discover -s unit_tests -p "*.py" -v
           coverage xml -o coverage.xml
 
+      - name: Run tests with coverage
+        run: |
+          coverage run --source=. -m unittest discover -s unit_tests -p "*.py" -v
+          coverage xml -o coverage.xml
+
+      - name: Show coverage summary
+        if: always()
+        run: |
+          echo "## Покрытие тестами" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          coverage report -m >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         with:
