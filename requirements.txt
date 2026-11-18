@@ -1,1 +1,4 @@
 coverage
+openpyxl
+numpy
+opencv-python-headless
