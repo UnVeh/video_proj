@@ -2,3 +2,5 @@ coverage
 openpyxl
 numpy
 opencv-python-headless
+pytesseract
+Pillow
